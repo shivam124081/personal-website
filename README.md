@@ -1,3 +1,9 @@
+# TODOS
+1. Footer, build by shivam, design inspired by ...
+2. Key Experience in tab form
+3. Projects
+
+
 # Shivam Sharma's Personal Website
 This repository contains all the code for my personal website to display my personal and professional experiences. The design was inspired by https://github.com/bchiang7/
 

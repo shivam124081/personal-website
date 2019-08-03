@@ -80,9 +80,18 @@ export default function SideBar() {
                 {lorem.generateParagraphs(2)}
 
                 <ol className={classes.list}>
-                    <li> <span>C++ </span></li>
-                    <li> <span>Python</span> </li>
-                    <li> <span>MATLAB</span> </li>
+                    <Grid container spacing={4}>
+                        <Grid item xs={6}>
+                            <li> <span>C++ </span></li>
+                            <li> <span>Python</span> </li>
+                            <li> <span>MATLAB</span> </li>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <li> <span>Javascript</span></li>
+                            <li> <span>LaTex</span> </li>
+                            <li> <span>HTML / CSS</span> </li>
+                        </Grid>
+                    </Grid>
                 </ol>
             </Grid>
 

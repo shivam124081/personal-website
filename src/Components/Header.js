@@ -75,7 +75,7 @@ export default function Header() {
                 <h4 style={{diplay: 'inline'}}> 
                     <Link 
                         activeClass="active"
-                        to="appbar"
+                        to="home"
                         spy={true}
                         smooth={true}
                         offset={-70}
