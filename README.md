@@ -1,3 +1,6 @@
+# Shivam Sharma's Personal Website
+This repository contains all the code for my personal website to display my personal and professional experiences. The design was inspired by https://github.com/bchiang7/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
