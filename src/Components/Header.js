@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import PanoramaIcon from '@material-ui/icons/PanoramaFishEye';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
@@ -61,7 +60,7 @@ const useStyles = makeStyles(theme => ({
         borderColor: '#D5573B',
         backgroundColor: '#D5573B'
       }
-  }
+  },
 }));
 
 export default function Header() {
@@ -80,6 +79,7 @@ export default function Header() {
                         smooth={true}
                         offset={-70}
                         duration= {500}>
+                        <i class="fa fa-home" style={{fontSize:'26px', color: '#D5573B', paddingRight: 5}} />
                         Shivam Sharma
                     </Link>
                 </h4>
@@ -92,9 +92,24 @@ export default function Header() {
                                     smooth={true}
                                     offset={-70}
                                     duration= {500}> About </Link> </p> </div>   
-                <div> 02. <p> <Link to="experience"> Experience </Link> </p> </div>
-                <div> 03. <p> <Link to="experience"> Projects </Link> </p> </div>
-                <div> 04. <p> <Link to="experience"> Contact </Link> </p> </div>
+                <div> 02. <p> <Link activeClass="active"
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration= {500}> Experience </Link> </p> </div>
+                <div> 03. <p> <Link activeClass="active"
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration= {500}> Projects </Link> </p> </div>
+                <div> 04. <p> <Link activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration= {500}> Contact </Link> </p> </div>
                 <Button variant="outlined" className={classes.resume}>
                     Resume
                 </Button>

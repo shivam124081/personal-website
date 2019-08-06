@@ -19,7 +19,9 @@ const useStyles = makeStyles(theme => ({
   rootDiv: {
     flexGrow: 1,
     width: '100%',
-    marginTop: 300
+    padding: '100px',
+    marginTop: 200,
+    backgroundColor: '#85858C'
   },
   rootGrid : {
     flexGrow: 1
@@ -37,6 +39,8 @@ const useStyles = makeStyles(theme => ({
   border : {
       border: '2px solid',
       borderColor: '#D5573B',
+      maxWidth: '70%',
+      maxHeight: '100%',
       height: 310,
       width: 400,
       borderRadius: 12,
@@ -45,10 +49,10 @@ const useStyles = makeStyles(theme => ({
       marginLeft: 77,
   },
   divider: {
-      color: "#033966",
+      color: "#011627",
       width: 430,
       height: '1px',
-      backgroundColor: '#033966',
+      backgroundColor: '#011627',
       border: 'none',
       marginTop: -32,
       marginLeft: 140,
@@ -59,7 +63,7 @@ const useStyles = makeStyles(theme => ({
         color: '#D5573B',
         fontWeight: 'bold',
         '& span': {
-            color: 'black',
+            color: 'white',
             display: 'inline',
             fontWeight: 'normal'
         }
@@ -73,11 +77,15 @@ export default function SideBar() {
   return (
     <div>
     <div className={classes.rootDiv} id="about">
-        <Grid container clasName={classes.rootGrid} spacing={4}>
+        <Grid container clasName={classes.rootGrid} spacing={10}>
             <Grid item xs={6}>
-                <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}> 01. </p> About Me </h2>
+                <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}> 01. </p> About Me </h2>
                 <hr className={classes.divider}/>
-                {lorem.generateParagraphs(2)}
+                <div style={{color: 'white'}}>
+                {lorem.generateParagraphs(1)}
+                <br />
+                {lorem.generateParagraphs(1)}
+                </div>
 
                 <ol className={classes.list}>
                     <Grid container spacing={4}>

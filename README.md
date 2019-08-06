@@ -7,6 +7,13 @@
 # Shivam Sharma's Personal Website
 This repository contains all the code for my personal website to display my personal and professional experiences. The design was inspired by https://github.com/bchiang7/
 
+# Color Scheme
+1. Dark Blue: #011627
+2. Medium Blue: #033966
+3. Grey: #403F4C
+4. Red/Orange: #D5573B
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
