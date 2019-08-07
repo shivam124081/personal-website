@@ -82,6 +82,7 @@ export default function SideBar() {
                 <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}> 01. </p> About Me </h2>
                 <hr className={classes.divider}/>
                 <div style={{color: 'white'}}>
+                
                 {lorem.generateParagraphs(1)}
                 <br />
                 {lorem.generateParagraphs(1)}

@@ -8,6 +8,7 @@ import Box from '@material-ui/core/Box';
 
 import Research from './Experiences/Research'
 import { LoremIpsum } from "lorem-ipsum";
+import Redbrick from './Experiences/Redbrick';
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {
@@ -125,7 +126,9 @@ export default function Experience() {
           <Research />
         </div>
       </TabPanel>
+
       <TabPanel value={value} index={1}>
+        <Redbrick />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three

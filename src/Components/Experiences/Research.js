@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Grid from '@material-ui/core/Grid';
-import ResearchPaper from '../PDF'
+import ResearchPaper from './PDF'
 import { withStyles } from '@material-ui/core/styles';
 import { LoremIpsum } from "lorem-ipsum";
 
