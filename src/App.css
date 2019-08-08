@@ -20,7 +20,7 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
 #home button:hover { background: #D5573B !important; color :#fff !important;}
 
 .MuiButton-root {padding: 5px 16px !important; }
-.MuiButtonBase-root { background: transparent !important; padding: 6px 0px !important; border-radius: 0px !important; font-weight: 400;}
+.MuiButtonBase-root { background: transparent !important; padding: 5px 16px !important; border-radius: 0px !important; font-weight: 400;}
 .MuiButtonBase-root.Mui-selected {  border-right: 2px solid #D5573B !important; font-weight: bold !important;}
 .MuiButtonBase-root:hover {
   color: #333 !important;
@@ -109,6 +109,6 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
   .MuiTabs-flexContainerVertical button { max-width: 33% !important;width: 33% !important; float: left;}
   .MuiTabs-flexContainerVertical button span { text-align: center;}
   .MuiTabs-flexContainerVertical button.Mui-selected { border-bottom: 2px solid #D5573B !important; border-right: 0px !important;}
-   
+   #experience .MuiTabs-flexContainerVertical { display: inline !important;}
 }
 
