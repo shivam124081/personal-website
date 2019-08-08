@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { LoremIpsum } from "lorem-ipsum";
 import Grid from '@material-ui/core/Grid';
-import profilePic from '../static/profile.jpg'
+import profilePic from '../static/profile.jpg';
+import './About.css';
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {
@@ -50,7 +51,7 @@ const useStyles = makeStyles(theme => ({
   },
   divider: {
       color: "#011627",
-      width: 430,
+      width: '40%',
       height: '1px',
       backgroundColor: '#011627',
       border: 'none',
@@ -79,10 +80,9 @@ export default function SideBar() {
     <div className={classes.rootDiv} id="about">
         <Grid container clasName={classes.rootGrid} spacing={10}>
             <Grid item xs={6}>
-                <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}> 01. </p> About Me </h2>
+                <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> About Me </h2>
                 <hr className={classes.divider}/>
                 <div style={{color: 'white'}}>
-                
                 {lorem.generateParagraphs(1)}
                 <br />
                 {lorem.generateParagraphs(1)}
@@ -91,14 +91,18 @@ export default function SideBar() {
                 <ol className={classes.list}>
                     <Grid container spacing={4}>
                         <Grid item xs={6}>
+                          <ul className="techdetails">
                             <li> <span>C++ </span></li>
                             <li> <span>Python</span> </li>
                             <li> <span>MATLAB</span> </li>
+                            </ul>
                         </Grid>
                         <Grid item xs={6}>
+                          <ul className="techdetails">
                             <li> <span>Javascript</span></li>
                             <li> <span>LaTex</span> </li>
                             <li> <span>HTML / CSS</span> </li>
+                            </ul>
                         </Grid>
                     </Grid>
                 </ol>

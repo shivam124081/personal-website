@@ -1,0 +1,48 @@
+.MuiTab-wrapper {
+    display: block !important;
+    text-align: left;
+}
+
+@media (max-width:850px){
+    .makeStyles-title-183{
+        width: 100% !important;
+        padding: 50px 50px 50px !important;
+        margin: 0 !important;
+    }
+    .MuiGrid-grid-xs-6 {
+        flex-direction: row;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        text-align: center;
+    }
+    .makeStyles-tabs-185 {
+        width: 100% !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .MuiTypography-body1,
+    .makeStyles-root-184 {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    .MuiBox-root-245 {
+        padding: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        padding: 0 !important;
+    }
+    .MuiGrid-spacing-xs-4 > .MuiGrid-item img {
+        margin: 40px 0  10px !important;
+    }
+    .PDF-root-251 {
+        margin: 0 !important;
+    }
+    .makeStyles-divider-188 {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+@media (max-width:850px){
+    .makeStyles-title-362 {
+        width: 100% !important;
+        padding: 50px 50px 50px !important;
+        margin: 0 !important;
+    }
+    .MuiGrid-grid-xs-6 {
+        flex-direction: row;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        text-align: left;
+    }
+    .MuiGrid-item img { 
+        width: 100% !important;
+        margin-top: 20px !important;
+        margin-left: 40px !important;
+    }
+    .makeStyles-para-72 {
+        width: 100% !important;
+    }
+    .makeStyles-divider-359 {
+        display: none;
+    }
+    .makeStyles-list-360 {
+        text-align: left !important;
+    }
+}

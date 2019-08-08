@@ -54,7 +54,7 @@ class Research extends Component {
         <div className={classes.rootDiv}>
         <Grid container spacing={4}>
           {/* Text */}
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <img src={michiganLogo} className={classes.logo}/>
             <br />
             <br />
@@ -72,7 +72,7 @@ class Research extends Component {
           </Grid>
 
           {/* Paper */}
-          <Grid item xs={6}>
+          <Grid item xs={7}>
             <ResearchPaper />
           </Grid>
         </Grid>

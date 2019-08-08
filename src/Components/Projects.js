@@ -6,6 +6,7 @@ import GTOC from './Projects/GTOC'
 import Enceladus from './Projects/Enceladus'
 import AMSID from './Projects/AMSID'
 import MITEE from './Projects/MITEE'
+import './Projects.css';
 
 const styles = {
   title: {
@@ -16,7 +17,7 @@ const styles = {
   },
   divider: {
     color: "#011627",
-    width: 430,
+    width: "40%",
     height: '1px',
     backgroundColor: '#011627',
     border: 'none',
@@ -39,7 +40,7 @@ class Projects extends Component {
 
     return (
         <div className={classes.title} id='projects'>
-        <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}> 02. </p> Other Projects </h2>
+        <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Other Projects </h2>
         <hr className={classes.divider}/>
         <Grid container alignItems="stretch">
             <Grid item xs={4} className={classes.grid}>

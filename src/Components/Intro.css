@@ -1,0 +1,17 @@
+
+@media (max-width:850px){
+    .makeStyles-root-70 {
+        width: 100% !important;
+        padding: 100px 80px 50px !important;
+        margin: 0 !important;
+    }
+    .makeStyles-root-70 .MuiGrid-grid-xs-6 {
+        flex-direction: row;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        text-align: center;
+    }
+    .makeStyles-para-72 {
+        width: 100% !important;
+    }
+}

@@ -9,7 +9,7 @@ import Box from '@material-ui/core/Box';
 import Research from './Experiences/Research'
 import { LoremIpsum } from "lorem-ipsum";
 import Redbrick from './Experiences/Redbrick';
-
+import './Experience.css';
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {
       max: 8,
@@ -76,15 +76,15 @@ const useStyles = makeStyles(() => ({
     }
   },
   tabSelect: {
-      backgroundColor: '#D5573B',
+      backgroundColor: '#FFF',
       borderRadius: '5px',
-      color: 'white',
+      color: '#D5573B',
       borderRight: '1px solid',
-      borderRightColor: '#D5573B',
+      borderRightColor: '#FFF',
   },
   divider: {
     color: "#033966",
-    width: 430,
+    width: '40%',
     height: '1px',
     backgroundColor: '#033966',
     border: 'none',
@@ -104,7 +104,7 @@ export default function Experience() {
 
   return (
     <div className={classes.title} id='experience'>
-    <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}> 02. </p> Key Experiences </h2>
+    <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Key Experiences </h2>
     <hr className={classes.divider}/>
 
     <div className={classes.root}>
@@ -115,18 +115,18 @@ export default function Experience() {
         aria-label="Vertical tabs example"
         className={classes.tabs}
         indicatorColor="none"
+        style={{width: "17%", paddingRight: "20px"}}
       >
         <Tab label="Research" className={ value === 0 ? classes.tabSelect : classes.tab} {...a11yProps(0)} />
         <Tab label="RedBrick AI" className={ value === 1 ? classes.tabSelect : classes.tab} {...a11yProps(1)} />
         <Tab label="Hyperloop" className={ value === 2 ? classes.tabSelect : classes.tab} {...a11yProps(2)} />
 
       </Tabs>
-      <TabPanel value={value} index={0}>
-        <div style={{width: 1000}}>
+      <TabPanel value={value} index={0} style={{width: "83%"}}>
+        <div>
           <Research />
         </div>
       </TabPanel>
-
       <TabPanel value={value} index={1}>
         <Redbrick />
       </TabPanel>

@@ -4,8 +4,8 @@ import { LoremIpsum } from "lorem-ipsum";
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
-import logos from '../static/logos.svg'
-
+import logos from '../static/logos.svg';
+import './Intro.css';
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {

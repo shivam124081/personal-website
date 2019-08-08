@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { LoremIpsum } from "lorem-ipsum";
 import Button from '@material-ui/core/Button';
+import './Contact.css';
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {
@@ -68,10 +69,10 @@ export default function Contact() {
 
   return (
     <div className={classes.title} id='contact'>
-    <h2 style={{color: '#011627'}}> <p className={classes.header}> 04. </p> <p className={classes.contact}> Contact me </p> </h2>
+    <h2 style={{color: '#011627'}}> <p className={classes.header}></p> <p className={classes.contact}> Contact me </p> </h2>
     <hr className={classes.divider}/>
     
-        <div style={{width: '50%', textAlign: 'center', color: 'white', margin: 'auto'}}>
+        <div style={{width: '50%', textAlign: 'center', color: 'white', margin: 'auto'}} className="Contact_details">
             {lorem.generateSentences(3)}
         </div>
         <Button variant="outlined" className={classes.button}> 

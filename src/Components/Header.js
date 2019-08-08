@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { Link, animateScroll as scroll } from "react-scroll";
+import clsx from 'clsx';
 
 
 const useStyles = makeStyles(theme => ({
@@ -37,8 +38,8 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 'bold',
       '& div' : {
         display: 'inline',
-        paddingRight: '5px',
-        paddingLeft: '5px',
+        paddingRight: '20px',
+        paddingLeft: '20px',
         color: '#D5573B',
         '& p' : {
             display: 'inline',
@@ -84,27 +85,31 @@ export default function Header() {
                     </Link>
                 </h4>
             </div>
-
+            
+            <div className="mobile_menu">
+              <i class={clsx(`fa fa-bars ${classes.icon}`)} style={{ fontSize: "20px",
+    paddingright: "15px"}}></i>
+            </div>
             <div className={classes.sections}>
-                <div> 01. <p> <Link activeClass="active"
+                <div><p> <Link activeClass="active"
                                     to="about"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
                                     duration= {500}> About </Link> </p> </div>   
-                <div> 02. <p> <Link activeClass="active"
+                <div><p> <Link activeClass="active"
                                     to="experience"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
                                     duration= {500}> Experience </Link> </p> </div>
-                <div> 03. <p> <Link activeClass="active"
+                <div><p> <Link activeClass="active"
                                     to="projects"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
                                     duration= {500}> Projects </Link> </p> </div>
-                <div> 04. <p> <Link activeClass="active"
+                <div><p> <Link activeClass="active"
                                     to="contact"
                                     spy={true}
                                     smooth={true}
