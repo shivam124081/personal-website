@@ -90,7 +90,7 @@ export default function AMSID() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          <div style={{overflowY: 'scroll', height: '70px'}}>
+          <div style={{overflowY: 'hidden', height: '80px'}}>
            {lorem.generateSentences(2)}
           </div>
         </Typography>
