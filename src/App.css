@@ -10,7 +10,6 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
 #home button:hover { background: #D5573B !important; color :#fff !important;}
 .MuiTypography-body1 { width: 83%;}
 .MuiButton-root {padding: 5px 16px !important; }
-<<<<<<< HEAD
 .MuiButtonBase-root { background: transparent !important; padding: 5px 16px !important; border-radius: 0px !important; font-weight: 400;}
 .MuiButtonBase-root.Mui-selected {  border-right: 3px solid #D5573B !important; font-weight: bold !important;}
 .MuiButtonBase-root.Mui-selected:hover {  color:#D5573B !important;  border-right: 3px solid #D5573B ; font-weight: bold !important;}
@@ -19,11 +18,6 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
   color: #333 !important;
   background-color: transparent !important;
 }
-=======
-.MuiButtonBase-root { background: transparent !important; padding: 5px 16px !important; border-radius: 0px !important; font-weight: 600 !important; }
-.MuiButtonBase-root.Mui-selected {  border-right: 2px solid #D5573B !important; font-weight: bold !important;}
-
->>>>>>> c3d36d5c6de8d9451dbffa34d91b1248e9f10582
 .techdetails { padding-left: 0px !important; color: #fff !important;}
 .MuiGrid-root ol { padding-left: 16px !important;}
 .techdetails li { color: #fff !important; list-style: circle;}
