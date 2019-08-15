@@ -21,10 +21,11 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
 
 .MuiButton-root {padding: 5px 16px !important; }
 .MuiButtonBase-root { background: transparent !important; padding: 5px 16px !important; border-radius: 0px !important; font-weight: 400;}
-.MuiButtonBase-root.Mui-selected {  border-right: 2px solid #D5573B !important; font-weight: bold !important;}
+.MuiButtonBase-root.Mui-selected {  border-right: 3px solid #D5573B !important; font-weight: bold !important;}
+.MuiButtonBase-root.Mui-selected:hover {  color:#D5573B !important;  border-right: 3px solid #D5573B ; font-weight: bold !important;}
+
 .MuiButtonBase-root:hover {
   color: #333 !important;
-  border-color: transparent !important;
   background-color: transparent !important;
 }
 .techdetails { padding-left: 0px !important; color: #fff !important;}
@@ -106,8 +107,8 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
   .techdetails { padding-left: 16px !important;}
   .MuiTabs-flexContainerVertical { width: 100% !important; display: inline; border-bottom: 1px solid #e2e2e2 !important;display: table;}
   
-  .MuiTabs-flexContainerVertical button { max-width: 33% !important;width: 33% !important; float: left;}
-  .MuiTabs-flexContainerVertical button span { text-align: center;}
+  .MuiTabs-flexContainerVertical button { max-width: 33% !important;width: 33% !important; float: left !important; display: inline !important;}
+  .MuiTabs-flexContainerVertical button span { text-align: center !important;}
   .MuiTabs-flexContainerVertical button.Mui-selected { border-bottom: 2px solid #D5573B !important; border-right: 0px !important;}
    #experience .MuiTabs-flexContainerVertical { display: inline !important;}
 }

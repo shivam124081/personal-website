@@ -55,25 +55,28 @@ class Redbrick extends Component {
         <div className={classes.rootDiv}>
         <Grid container spacing={4}>
           {/* Text */}
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <img src={redbrickLogo} className={classes.logo}/>
             <br />
             <br />
-            <p className={classes.section} style={{display: 'inline'}}> Title: </p> <p style={{display: 'inline'}}> Co-founder </p>
+            <p className={classes.section} style={{display: 'inline'}}> Title: </p> <p style={{display: 'inline'}}> Co-founder, Developer </p>
 
             <p className={classes.section}> Overview </p>
-            {lorem.generateSentences(5)}
+            RedBrick is a Software platform for creating and managing computer vision data sets. The platform offers
+            a variety of labeling tools (bounding boxes, segmentation, polygons), a collaborative environment, and 
+            a labels quality management pipeline. The platform is completely configurable for teams to use, and fit 
+            into their existing workflows. 
 
             <p className={classes.section}> Key Achievements </p>
             <ul className={classes.list}>
-              <li> <span> {lorem.generateSentences(1)} </span> </li>
-              <li> <span> {lorem.generateSentences(1)} </span> </li>
-              <li> <span> {lorem.generateSentences(1)} </span> </li>
+              <li> <span> Designed and built application front-end using - React JS, HTML & CSS.</span> </li>
+              <li> <span> Built backend (python) pre-labeling features (automated labeling, and pre-generated labels) </span> </li>
+              <li> <span> Onboarded 2 research teams (MCity and UofM Aerospace Engineering) within 3 months.</span> </li>
             </ul>
           </Grid>
 
           {/* Paper */}
-          <Grid item xs={6}>
+          <Grid item xs={7}>
             <RBimgaes />
           </Grid>
         </Grid>

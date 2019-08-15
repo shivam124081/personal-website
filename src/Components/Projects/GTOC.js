@@ -93,7 +93,7 @@ export default function GTOC() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          <div style={{overflowY: 'scroll', height: '70px'}}>
+          <div className="project-scroll">
            {lorem.generateSentences(2)}
           </div>
         </Typography>

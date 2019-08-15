@@ -28,11 +28,11 @@ export default function SideBar() {
 
   return (
     <div className={classes.root}>
-        <i class={clsx(`fa fa-linkedin-square ${classes.icon}`)}></i>
+        <i className={clsx(`fa fa-linkedin-square ${classes.icon}`)} onClick={()=>{window.location = "https://www.linkedin.com/in/shivam-sharma-38109210a/";}}></i>
         <br />
-        <i class={clsx(`fa fa-instagram ${classes.icon}`)}></i>
+        <i className={clsx(`fa fa-instagram ${classes.icon}`)} onClick={()=>{window.location = "https://www.instagram.com/shivam124081/?hl=en";}}></i>
         <br />
-        <i class={clsx(`fa fa-github ${classes.icon}`)}></i>
+        <i className={clsx(`fa fa-github ${classes.icon}`)}></i>
     </div>
   );
 }

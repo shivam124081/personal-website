@@ -17,12 +17,13 @@ const styles = {
     flexGrow: 1,
     marginTop: -10,
     textAlign: 'center',
-    marginLeft: 95
+    marginLeft: 25
   },
   document: {
     border: '1px solid',
     borderColor: '#d9d9d9',
     borderRadius: 10,
+    width: 400,
     overflow: 'hidden',
   },
   navbutton: {
@@ -33,7 +34,6 @@ const styles = {
     }
   },
   pagenum: {
-    margin: '0 auto',
     color: '#033966'
   },
   select : {
@@ -52,7 +52,7 @@ const styles = {
 };
 
 class PDF extends Component {
-  state = { numPages: null, pageNumber: 1, value: 0, content: researchPaper };
+  state = { numPages: null, pageNumber: 1, value: "paper", content: researchPaper };
 
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages });
@@ -78,12 +78,12 @@ class PDF extends Component {
 
     return (
       <div className={classes.root}>
-        <nav style={{}}>
+        <nav style={{width: 400}}> 
           {/* Paper/Presentation select */}
           <div style={{float: 'left', display: 'inline'}}>
             <Select
               native
-              value={this.state.value}
+              value={value}
               input={<OutlinedInput name="age" id="outlined-age-simple" classes={{root: classes.input}}/>}
               classes={{
                 root: classes.select,
@@ -91,8 +91,8 @@ class PDF extends Component {
               color="none"
               onChange={this.handleChange}
             >
-              <option value={0}>Paper</option>
-              <option value={1}>Presentation</option>
+              <option value={"paper"}>Paper</option>
+              <option value={"presentation"}>Presentation</option>
             </Select>
           </div>
           <div style={{float: 'right', display: 'inline'}}>
@@ -116,12 +116,23 @@ class PDF extends Component {
         <br />
 
         <div className={classes.document}>
-          <Document
-            file={value === 0 ? researchPaper : researchPres}
+          {value === "paper" ? (
+            <Document
+            file={researchPaper}
             onLoadSuccess={this.onDocumentLoadSuccess}
-          >
-            <Page pageNumber={pageNumber} height={500}/>
-          </Document>
+            id="pdf-document-paper"
+            >
+            <Page pageNumber={pageNumber} width={400}/>
+            </Document>
+
+          ) : (
+            <Document
+            file={researchPres}
+            onLoadSuccess={this.onDocumentLoadSuccess}
+            >
+            <Page pageNumber={pageNumber} width={400}/>
+            </Document>
+          )}
         </div>
         <p className={classes.pagenum}> Page {pageNumber} of {numPages} </p>
       </div>

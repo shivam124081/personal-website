@@ -6,16 +6,15 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import Button from '@material-ui/core/Button';
 import FileIcon from '@material-ui/icons/FolderOpen';
 import { LoremIpsum } from "lorem-ipsum";
+import AMSID_More from './AMSID/AMSID_More';
+import '../Projects.css'
 
-import galaxy from '../../static/AMSID.jpg'
+import galaxy from '../../static/AMSID/AMSID.jpg'
 
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
@@ -68,38 +67,46 @@ const useStyles = makeStyles(theme => ({
 
 export default function AMSID() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  function handleExpandClick() {
-    setExpanded(!expanded);
-  }
+  const [moreInfo, setMoreInfo] = React.useState(false);
 
   return (
-    <Card className={classes.card}>
-      <CardHeader
-        avatar={
-          <FileIcon style={{color: '#D5573B'}}/>
-        }
-        title="Multi-surface Inspection Drone - AE405"
-        subheader="Fall, 2018"
-      />
-      <CardMedia
-        className={classes.media}
-        image={galaxy}
-        title="amsid"
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          <div style={{overflowY: 'scroll', height: '70px'}}>
-           {lorem.generateSentences(2)}
-          </div>
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button variant="outlined" className={classes.more}>
-          View More
-        </Button>
-      </CardActions>
-    </Card>
+    <React.Fragment>
+      {/* Render Dialogs */}
+      {! moreInfo ? (
+        <React.Fragment />
+      ) : (
+       <AMSID_More moreInfo={moreInfo} setMoreInfo={setMoreInfo} title={"Multi-surface Inspection Drone - AE405"}/>
+      )}
+
+      <Card className={classes.card}>
+        <CardHeader
+          avatar={
+            <FileIcon style={{color: '#D5573B'}}/>
+          }
+          title="Multi-surface Inspection Drone - AE405"
+          subheader="Fall, 2018"
+        />
+        <CardMedia
+          className={classes.media}
+          image={galaxy}
+          title="amsid"
+        />
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            <div className={clsx("project-scroll", "view-scroll")}>
+              For my senior design lab, I alongside 3 other team members, proposed, designed and manufactured a 'Multi-surface Surveillance and Inspection Drone.'.
+              The drone is a 4-wheeled vehicle capable of traversing inclined surfaces including vertical walls.
+              It houses 2 powerful propellers that have a dual purpose - traction on surfaces, and propulsion. 
+              Design inspired by <a href="https://la.disneyresearch.com/publication/vertigo/" style={{textDecoration: 'none'}}> EHT Zurich. </a>
+            </div>
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button variant="outlined" className={classes.more} onClick={()=>{setMoreInfo(true)}}>
+            View More
+          </Button>
+        </CardActions>
+      </Card>
+      </React.Fragment>
   );
 }

@@ -1,3 +1,30 @@
+/* Project over iew scrolling */
+.project-scroll {
+    overflow-y: scroll;
+    height: 120px;
+}
+.view-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .view-scroll::-webkit-scrollbar-track {
+    box-shadow: transparent;
+    border-radius: 10px;
+  }
+  /* Handle */
+  .view-scroll::-webkit-scrollbar-thumb {
+    background: rgb(114, 114, 114); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .view-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555555; 
+  }
+
+
+
 @media (max-width:850px){
     .Projects-title-319 {
         width: 100% !important;
@@ -22,4 +49,9 @@
     .Projects-divider-320 {
         display: none;
     }
+}
+
+/* Project More Dialogs */
+.project-more {
+  margin-right: 3px;
 }

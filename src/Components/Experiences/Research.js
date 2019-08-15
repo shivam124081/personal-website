@@ -41,6 +41,9 @@ const styles = {
         color: '#403F4C'
       }
     }
+  },
+  link : {
+    textDecoration: 'none'
   }
 };
 
@@ -61,13 +64,17 @@ class Research extends Component {
             <p className={classes.section} style={{display: 'inline'}}> Title: </p> <p style={{display: 'inline'}}> Researcher </p>
 
             <p className={classes.section}> Overview </p>
-            {lorem.generateSentences(5)}
+            Participated in research to formally verify the safety of next generation aircraft collision avoidance
+            neural networks. This was a joint project between Stanford and the University of Michigan. Using aircraft 
+            dynamics we defined 'safe-regions' which were used to bound and search the neural networks for 
+            unsafe behavior using the linear program solver Reluplex. The neural networks are checked for unsafe behaviour
+            exposing thousands of unsafe counter-examples. 
 
             <p className={classes.section}> Key Achievements </p>
             <ul className={classes.list}>
-              <li> <span> {lorem.generateSentences(1)} </span> </li>
-              <li> <span> {lorem.generateSentences(1)} </span> </li>
-              <li> <span> {lorem.generateSentences(1)} </span> </li>
+              <li> <span> First authored paper, presentation and presented work at <a href="google.com" className={classes.link}>AAAI symposium</a> at Stanford </span> </li>
+              <li> <span> Unveiled thousands of counter-examples to safe behaviour in next generation collision avoidance 
+                neural networks. </span> </li>
             </ul>
           </Grid>
 

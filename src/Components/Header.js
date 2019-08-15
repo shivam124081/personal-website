@@ -110,6 +110,12 @@ export default function Header() {
                                     offset={-70}
                                     duration= {500}> Projects </Link> </p> </div>
                 <div><p> <Link activeClass="active"
+                                    to="coursework"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration= {500}> Coursework </Link> </p> </div>
+                <div><p> <Link activeClass="active"
                                     to="contact"
                                     spy={true}
                                     smooth={true}

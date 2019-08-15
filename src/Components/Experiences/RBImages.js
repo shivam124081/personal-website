@@ -15,15 +15,17 @@ const styles = {
         flexGrow: 1,
         marginTop: -10,
         textAlign: 'center',
-        marginLeft: 95
+        marginLeft: 55
       },
       images : {
-        width: '500px',
+        width: '400px',
+        marginBottom: '-10px'
       },
       document: {
         border: '1px solid',
         borderColor: '#d9d9d9',
         borderRadius: 10,
+        width: 400,
         overflow: 'hidden',
       },
       navbutton: {
@@ -61,24 +63,9 @@ class PDF extends Component {
 
     return (
       <div className={classes.root}>
-        <nav style={{}}>
+        <nav style={{width: 400, textAlign: 'center'}}>
           {/* Paper/Presentation select */}
-          <div style={{float: 'left', display: 'inline'}}>
-            <Select
-              native
-              value={this.state.value}
-              input={<OutlinedInput name="age" id="outlined-age-simple" classes={{root: classes.input}}/>}
-              classes={{
-                root: classes.select,
-              }}
-              color="none"
-              onChange={this.handleChange}
-            >
-              <option value={0}>Paper</option>
-              <option value={1}>Presentation</option>
-            </Select>
-          </div>
-          <div style={{float: 'right', display: 'inline'}}>
+
           <IconButton 
             disabled={pageNumber === 1 ? true : false}
             aria-label="prev"
@@ -93,14 +80,11 @@ class PDF extends Component {
             className={classes.navbutton}>
             <NextIcon />
           </IconButton>
-          </div>
+
         </nav>
-        <br />
-        <br />
         <div className={classes.document}>
             <img src={RBgif} className={classes.images} />
-        </div>
-           
+        </div> 
         </div>
     );
   }

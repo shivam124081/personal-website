@@ -39,8 +39,16 @@
     .MuiGrid-spacing-xs-4 > .MuiGrid-item img {
         margin: 40px 0  10px !important;
     }
-    .PDF-root-251 {
-        margin: 0 !important;
+    .PDF-root-252 nav {
+        margin: 0 auto !important; 
+    }
+    .PDF-document-253 {
+        margin: 0 auto !important; 
+    }
+    .PDF-pagenum-255{
+        margin: 0 auto !important; 
+        text-align: center !important;
+        float: center !important; 
     }
     .makeStyles-divider-188 {
         display: none;

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { LoremIpsum } from "lorem-ipsum";
 import Button from '@material-ui/core/Button';
 import './Contact.css';
+import Footer from './Footer'
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     width: '100%',
     margin: 'auto',
-    paddingBottom: '100px',
+    paddingBottom: '0',
     paddingTop: '100px',
     backgroundColor: '#85858C'
   },
@@ -73,12 +74,14 @@ export default function Contact() {
     <hr className={classes.divider}/>
     
         <div style={{width: '50%', textAlign: 'center', color: 'white', margin: 'auto'}} className="Contact_details">
-            {lorem.generateSentences(3)}
+            I am always looking to get involved in exciting projects. If you want to reach out to me to discuss, or just chat, 
+            shoot me an email!
         </div>
-        <Button variant="outlined" className={classes.button}> 
+        <Button variant="outlined" className={classes.button} onClick={()=>{window.location = "mailto:sshivam@umich.edu";}}> 
                 Email me
         </Button>
-        
+    
+    <Footer style={{float: 'bottom'}}/>
     </div>
   );
 }

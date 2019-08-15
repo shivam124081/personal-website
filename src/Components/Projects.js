@@ -13,7 +13,7 @@ const styles = {
     flexGrow: 1,
     width: '100%',
     padding: '100px',
-    backgroundColor: '#85858C'
+    backgroundColor: '#85858C',
   },
   divider: {
     color: "#011627",
@@ -26,8 +26,8 @@ const styles = {
     marginBottom: 20
   },
   grid: {
-    paddingBottom: '10px',
-    paddingTop: '10px'
+    marginTop: '10px',
+    marginBottom: '10px'
   }
 };
 
@@ -42,20 +42,20 @@ class Projects extends Component {
         <div className={classes.title} id='projects'>
         <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Other Projects </h2>
         <hr className={classes.divider}/>
-        <Grid container alignItems="stretch">
-            <Grid item xs={4} className={classes.grid}>
-                <GTOC />
-            </Grid>
-
-            <Grid item xs={4} className={classes.grid}>
-              <Enceladus />
-            </Grid>
-
-            <Grid item xs={4} className={classes.grid}>
+        <Grid container justify="space-around" alignContent="flex-start" spacing={4}>
+            <Grid item lg={4} className={classes.grid}>
               <AMSID />
             </Grid>
 
-            <Grid item xs={4} className={classes.grid}>
+            <Grid item lg={4} className={classes.grid}>
+              <Enceladus />
+            </Grid>
+
+            <Grid item lg={4} className={classes.grid}>
+              <GTOC />
+            </Grid>
+
+            <Grid item lg={12} className={classes.grid}>
               <MITEE />
             </Grid>
         </Grid>

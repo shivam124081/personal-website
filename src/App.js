@@ -13,7 +13,6 @@ import Projects from './Components/Projects'
 import Coursework from './Components/Coursework'
 import Contact from './Components/Contact'
 
-
 function App() {
   return (
     <React.Fragment>

@@ -9,7 +9,9 @@ import Box from '@material-ui/core/Box';
 import Research from './Experiences/Research'
 import { LoremIpsum } from "lorem-ipsum";
 import Redbrick from './Experiences/Redbrick';
+import Hyperloop from './Experiences/Hyperloop';
 import './Experience.css';
+
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {
       max: 8,
@@ -66,13 +68,13 @@ const useStyles = makeStyles(() => ({
     borderRadius: 12,
   },
   tabs: {
-    borderRight: '1px solid',
-    borderRightColor: '#d9d9d9',
+    borderRight: '0px solid',
   },
   tab: {
     color: 'black',
     '&:hover':{
-      color: '#D5573B'
+      color: '#D5573B',
+      fontWeight: 'bold',
     }
   },
   tabSelect: {
@@ -123,15 +125,13 @@ export default function Experience() {
 
       </Tabs>
       <TabPanel value={value} index={0} style={{width: "83%"}}>
-        <div>
-          <Research />
-        </div>
+        <Research />
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={1} style={{width: "83%"}}>
         <Redbrick />
       </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
+      <TabPanel value={value} index={2} style={{width: "83%"}}>
+        <Hyperloop />
       </TabPanel>
     </div>
     </div>

@@ -110,7 +110,6 @@ export default function SideBar() {
 
             <Grid item xs={6}>
                 <img src={profilePic} className={classes.profile}/>
-                <div className={classes.border}/>
             </Grid>
         </Grid>
     </div>
