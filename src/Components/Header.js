@@ -8,9 +8,6 @@ import clsx from 'clsx';
 
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -90,7 +87,7 @@ export default function Header() {
               <i class={clsx(`fa fa-bars ${classes.icon}`)} style={{ fontSize: "20px",
     paddingright: "15px"}}></i>
             </div>
-            <div className={classes.sections}>
+            <div className="header">
                 <div><p> <Link activeClass="active"
                                     to="about"
                                     spy={true}

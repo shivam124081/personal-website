@@ -56,19 +56,20 @@ function a11yProps(index) {
 
 
 const useStyles = makeStyles(() => ({
-  title: {
+  rootHorizontal: {
     flexGrow: 1,
-    width: '100%',
-    padding: '100px',
+    display: 'flex',
+    padding: 10,
+    borderRadius: 12,
   },
-  root: {
+  rootVertical: {
     flexGrow: 1,
     display: 'flex',
     padding: 10,
     borderRadius: 12,
   },
   tabs: {
-    borderRight: '0px solid',
+    width: '200px'    
   },
   tab: {
     color: 'black',
@@ -81,8 +82,6 @@ const useStyles = makeStyles(() => ({
       backgroundColor: '#FFF',
       borderRadius: '5px',
       color: '#D5573B',
-      borderRight: '1px solid',
-      borderRightColor: '#FFF',
   },
   divider: {
     color: "#033966",
@@ -105,32 +104,50 @@ export default function Experience() {
   }
 
   return (
-    <div className={classes.title} id='experience'>
+    <div className="section-root" id="experience">
     <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Key Experiences </h2>
     <hr className={classes.divider}/>
 
-    <div className={classes.root}>
+    <div className="root-tab-div" style={{overflowX: 'scroll !important'}}>
+      
+      {/* Horizontal Tabs */}
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        id="horizontal-tabs"
+        aria-label="horizontal tabs example"
+        className={classes.tabs}
+        indicatorColor="none"
+        centered
+      >
+        <Tab label="Research" className={ value === 0 ? classes.tabSelect : classes.tab} {...a11yProps(0)} />
+        <Tab label="RedBrick AI" className={ value === 1 ? classes.tabSelect : classes.tab} {...a11yProps(1)} />
+        <Tab label="Hyperloop" className={ value === 2 ? classes.tabSelect : classes.tab} {...a11yProps(2)} />
+      </Tabs>
+      <br />
+
+      {/* Vertical Tabs */}
       <Tabs
         orientation="vertical"
         value={value}
+        id="vertical-tabs"
         onChange={handleChange}
         aria-label="Vertical tabs example"
         className={classes.tabs}
         indicatorColor="none"
-        style={{width: "17%", paddingRight: "20px"}}
       >
         <Tab label="Research" className={ value === 0 ? classes.tabSelect : classes.tab} {...a11yProps(0)} />
         <Tab label="RedBrick AI" className={ value === 1 ? classes.tabSelect : classes.tab} {...a11yProps(1)} />
         <Tab label="Hyperloop" className={ value === 2 ? classes.tabSelect : classes.tab} {...a11yProps(2)} />
 
       </Tabs>
-      <TabPanel value={value} index={0} style={{width: "83%"}}>
+      <TabPanel value={value} index={0} >
         <Research />
       </TabPanel>
-      <TabPanel value={value} index={1} style={{width: "83%"}}>
+      <TabPanel value={value} index={1} >
         <Redbrick />
       </TabPanel>
-      <TabPanel value={value} index={2} style={{width: "83%"}}>
+      <TabPanel value={value} index={2}>
         <Hyperloop />
       </TabPanel>
     </div>

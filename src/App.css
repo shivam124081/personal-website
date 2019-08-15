@@ -8,16 +8,46 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
 #projects .MuiCardActions-spacing button:hover,
 #about  { margin-top: 0px }
 #home button:hover { background: #D5573B !important; color :#fff !important;}
-.MuiTypography-body1 { width: 83%;}
+.MuiTypography-body1 { width: 100%;}
 .MuiButton-root {padding: 5px 16px !important; }
 .MuiButtonBase-root { background: transparent !important; padding: 5px 16px !important; border-radius: 0px !important; font-weight: 400;}
-.MuiButtonBase-root.Mui-selected {  border-right: 3px solid #D5573B !important; font-weight: bold !important;}
-.MuiButtonBase-root.Mui-selected:hover {  color:#D5573B !important;  border-right: 3px solid #D5573B ; font-weight: bold !important;}
+
+/* Header CSS*/
+.header {
+  margin-left: auto; 
+  margin-right: 0; 
+  display: 'inline';
+  font-weight: 'bold';
+}
+.header div {
+  display: inline; 
+  padding-right: 20px; 
+  padding-left: 20px; 
+  color: #D5573B;
+}
+.header div p {
+  display: inline; 
+  color: white;
+}
+.header div p:hover {
+  color: #D5573B;
+  cursor: pointer;
+}
 
 .MuiButtonBase-root:hover {
   color: #333 !important;
   background-color: transparent !important;
 }
+
+/* Section root */
+.section-root {
+  padding-top: 150px ;
+  padding-left: 150px ;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto; 
+}
+
 .techdetails { padding-left: 0px !important; color: #fff !important;}
 .MuiGrid-root ol { padding-left: 16px !important;}
 .techdetails li { color: #fff !important; list-style: circle;}
@@ -46,29 +76,22 @@ ol { padding-left: 0px !important;}
     transform: rotate(360deg);
   }
 }
-
+@media (max-width:850px) {
+ #experience {width: 100% !important;margin: 0 auto !important; padding-left: 50px !important; padding-right: 50px !important; padding-bottom: 100px !important;} 
+}
 @media (max-width:850px){
+  #sidebar {display: none !important}
   h1 {    font-size: 2rem !important;    margin-top: 10px !important;    margin-bottom: 15px !important;    line-height: 1.2;  }
   h2 {    font-size: 1.5rem !important;    margin-top: 25px !important;  }
-    .makeStyles-root-68 {    margin-left: 10px !important;    margin-top: 50vh !important;  }
+  /* Main div padding */
+  .makeStyles-root-68 { display: none !important; }
   .mobile_menu {    display: block !important;  }
-  .makeStyles-sections-6 {    display: none !important;  }
-  .MuiGrid-item { width: 100% !important; max-width: 100% !important;    flex-basis: 100% !important;}
-  .MuiGrid-item .MuiCard-root { width: 100% !important; max-width: 100% !important;}
+  .header { display: none !important;}
   #home  button,
   #contact button,
   .MuiGrid-item .MuiCard-root button { padding: 6px  15px !important;}
-  #home {     width: 80% !important;    margin: 0 auto !important;    padding: 100px 0px 0px !important; padding-bottom: 100px !important;}
-    #home img { margin: 0px !important;}
+  #home, #about, #coursework, #projects, #contact {width: 100% !important;margin: 0 auto !important; padding-left: 50px !important; padding-right: 50px !important; padding-bottom: 100px !important;}
   .techdetails { padding-left: 16px !important;}
   #experience { padding-bottom: 90px !important;}
-  #contact,
-  #projects { padding: 90px 90px !important; margin: 0 auto !important;}
-  .MuiTabs-flexContainerVertical { width: 100% !important; display: inline; border-bottom: 1px solid #e2e2e2 !important;display: table;}
-  
-  .MuiTabs-flexContainerVertical button { max-width: 33% !important;width: 33% !important; float: left !important; display: inline !important;}
-  .MuiTabs-flexContainerVertical button span { text-align: center !important;}
-  .MuiTabs-flexContainerVertical button.Mui-selected { border-bottom: 2px solid #D5573B !important; border-right: 0px !important;}
-   #experience .MuiTabs-flexContainerVertical { display: inline !important;}
 }
 

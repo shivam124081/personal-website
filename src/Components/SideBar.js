@@ -27,7 +27,7 @@ export default function SideBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="sidebar">
         <i className={clsx(`fa fa-linkedin-square ${classes.icon}`)} onClick={()=>{window.location = "https://www.linkedin.com/in/shivam-sharma-38109210a/";}}></i>
         <br />
         <i className={clsx(`fa fa-instagram ${classes.icon}`)} onClick={()=>{window.location = "https://www.instagram.com/shivam124081/?hl=en";}}></i>

@@ -9,12 +9,6 @@ import MITEE from './Projects/MITEE'
 import './Projects.css';
 
 const styles = {
-  title: {
-    flexGrow: 1,
-    width: '100%',
-    padding: '100px',
-    backgroundColor: '#85858C',
-  },
   divider: {
     color: "#011627",
     width: "40%",
@@ -39,23 +33,23 @@ class Projects extends Component {
     const {classes} = this.props
 
     return (
-        <div className={classes.title} id='projects'>
+        <div className="section-root" style={{backgroundColor: '#85858C'}} id='projects'>
         <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Other Projects </h2>
         <hr className={classes.divider}/>
         <Grid container justify="space-around" alignContent="flex-start" spacing={4}>
-            <Grid item lg={4} className={classes.grid}>
+            <Grid item md={4} className={classes.grid}>
               <AMSID />
             </Grid>
 
-            <Grid item lg={4} className={classes.grid}>
+            <Grid item md={4} className={classes.grid}>
               <Enceladus />
             </Grid>
 
-            <Grid item lg={4} className={classes.grid}>
+            <Grid item md={4} className={classes.grid}>
               <GTOC />
             </Grid>
 
-            <Grid item lg={12} className={classes.grid}>
+            <Grid item md={12} className={classes.grid}>
               <MITEE />
             </Grid>
         </Grid>

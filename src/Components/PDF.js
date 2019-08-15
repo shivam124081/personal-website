@@ -78,7 +78,7 @@ class PDF extends Component {
     const {classes} = this.props
 
     return (
-      <div className={classes.root}>
+      <div>
         <nav style={{}}>
           {/* Paper/Presentation select */}
           <div style={{float: 'left', display: 'inline', marginTop: 12}}>
@@ -120,8 +120,9 @@ class PDF extends Component {
           <Document
             file={value === 0 ? researchPaper : researchPres}
             onLoadSuccess={this.onDocumentLoadSuccess}
+            width={100}
           >
-            <Page pageNumber={pageNumber} height={500} />
+            <Page pageNumber={pageNumber}/>
           </Document>
         </div>
         <p className={classes.pagenum}> Page {pageNumber} of {numPages} </p>

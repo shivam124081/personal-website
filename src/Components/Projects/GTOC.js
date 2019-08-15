@@ -75,7 +75,7 @@ export default function GTOC() {
   }
 
   return (
-    <Card className={classes.card}>
+    <Card className="card">
       <CardHeader
         avatar={
           <FileIcon style={{color: '#D5573B'}}/>

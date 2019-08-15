@@ -77,7 +77,7 @@ export default function Enceladus() {
     ) : (
       <EnceladusMore moreInfo={moreInfo} setMoreInfo={setMoreInfo} title={"Multi-surface Inspection Drone - AE405"}/>
     )}
-    <Card className={classes.card}>
+    <Card className="card">
       <CardHeader
         avatar={
           <FileIcon style={{color: '#D5573B'}}/>

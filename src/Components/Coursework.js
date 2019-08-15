@@ -17,11 +17,6 @@ const lorem = new LoremIpsum({
 });
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    width: '100%',
-    padding: '100px',
-  },
   divider: {
     color: "#011627",
     width: "40%",
@@ -50,7 +45,7 @@ export default function Contact() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} id='coursework'>
+    <div className="section-root" id='coursework'>
       <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Relevant Coursework </h2>
       <hr className={classes.divider}/>
     

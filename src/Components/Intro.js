@@ -32,10 +32,6 @@ const useStyles = makeStyles(theme => ({
   fontcolor: {
       color: '#4A5759'
   },
-  para: {
-      width: '80%',
-      color: '#011627'
-  },
   email: {
     display: 'inline',
     marginTop: 30,
@@ -84,9 +80,9 @@ export default function Intro() {
   }
 
   return (
-    <div className={classes.root} id='home'>
-      <Grid container>
-        <Grid item xs={6}>
+    <div className="section-root" id='home'>
+      <Grid container justify="center">
+        <Grid item lg={6}>
           {/* Intro */}
           <h2 style={{color: '#D5573B'}}>
               Hi, my name is
@@ -99,25 +95,28 @@ export default function Intro() {
           </h1>
 
           {/* About Paragraph */}
-          <div className={classes.para}>
+          <div className="intro-para">
             I'm a senior at the <b style={{color: '#033966'}}>University of Michigan</b> studying 
             <b style={{color: '#033966'}}> Aerospace Engineering</b> with a minor in <b style={{color: '#033966'}}>Computer Science</b>.
             I have experience in the application of computer science concepts to challenging physical problems like collision avoidance, 
             control and autonomy. 
           </div>
 
+          <div id="button-reveal">
           <Button variant="outlined" className={classes.email} onClick={handleReveal}>
              {email}
           </Button>
           {email === 'Zh9SvSG72d3VnNzlY' &&
           <p style={{fontSize: 11, marginTop: 0, fontWeight: 'bold', color: '#033966'}}> Click to reveal email </p>
           }
+          </div>
+
 
         </Grid>
 
         {/* Logos */}
-        <Grid item xs={6} style={{textAlign: 'center'}}>
-          <img src={logos} style={{width: "400px", marginTop: '100px'}}/>
+        <Grid item lg={6} id="logo-grid">
+          <img src={logos} className="logos"/>
         </Grid>
       </Grid>
     </div>

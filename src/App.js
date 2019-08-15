@@ -16,15 +16,14 @@ import Contact from './Components/Contact'
 function App() {
   return (
     <React.Fragment>
-      <CssBaseline />
         <Header />
         <SideBar />
         <Intro />
         <About />
         <Experience />
         <Projects />
-        <Coursework />
-        <Contact />
+        {/*<Coursework />
+        <Contact />  */}
     </React.Fragment>
   );
 }

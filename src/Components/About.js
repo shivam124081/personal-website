@@ -17,21 +17,12 @@ const lorem = new LoremIpsum({
 });
 
 const useStyles = makeStyles(theme => ({
-  rootDiv: {
-    flexGrow: 1,
-    width: '100%',
-    padding: '100px',
-    marginTop: 200,
-    backgroundColor: '#85858C'
-  },
   rootGrid : {
     flexGrow: 1
   },
   profile: {
-      maxWidth: '70%',
-      maxHeight: '100%',
-      width: 400,
-      height: 310,
+      maxWidth: '90%',
+      width: 450,
       borderRadius: 12,
       marginTop: 40,
       marginLeft: 60,
@@ -59,26 +50,14 @@ const useStyles = makeStyles(theme => ({
       marginLeft: 140,
       marginBottom: 20
   },
-  list: {
-    '& li' : {
-        color: '#D5573B',
-        fontWeight: 'bold',
-        '& span': {
-            color: 'white',
-            display: 'inline',
-            fontWeight: 'normal'
-        }
-    }
-  }
 }));
 
 export default function SideBar() {
   const classes = useStyles();
 
   return (
-    <div>
-    <div className={classes.rootDiv} id="about">
-        <Grid container clasName={classes.rootGrid} spacing={10}>
+    <div className="section-root" style={{backgroundColor: '#85858C'}} id="about">
+        <Grid container clasName={classes.rootGrid}>
             <Grid item xs={6}>
                 <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> About Me </h2>
                 <hr className={classes.divider}/>
@@ -88,8 +67,8 @@ export default function SideBar() {
                 {lorem.generateParagraphs(1)}
                 </div>
 
-                <ol className={classes.list}>
-                    <Grid container spacing={4}>
+                <ol>
+                    <Grid container spacing={4} justify="center">
                         <Grid item xs={6}>
                           <ul className="techdetails">
                             <li> <span>C++ </span></li>
@@ -112,7 +91,6 @@ export default function SideBar() {
                 <img src={profilePic} className={classes.profile}/>
             </Grid>
         </Grid>
-    </div>
     </div>
   );
 }

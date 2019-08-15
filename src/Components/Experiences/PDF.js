@@ -14,7 +14,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 const styles = {
   root: {
-    flexGrow: 1,
     marginTop: -10,
     textAlign: 'center',
     marginLeft: 25
@@ -24,6 +23,7 @@ const styles = {
     borderColor: '#d9d9d9',
     borderRadius: 10,
     width: 400,
+    // height: 'auto',
     overflow: 'hidden',
   },
   navbutton: {
@@ -80,7 +80,7 @@ class PDF extends Component {
       <div className={classes.root}>
         <nav style={{width: 400}}> 
           {/* Paper/Presentation select */}
-          <div style={{float: 'left', display: 'inline'}}>
+          <div style={{float: 'left', display: 'inline', overflowX:'scroll'}}>
             <Select
               native
               value={value}

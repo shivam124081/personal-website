@@ -3,12 +3,65 @@
     text-align: left;
 }
 
+.MuiButtonBase-root.Mui-selected {  border-right: 3px solid #D5573B !important; font-weight: bold !important;}
+.MuiButtonBase-root.Mui-selected:hover {  color:#D5573B !important;  border-right: 3px solid #D5573B ; font-weight: bold !important;}
+
+.experience-root {
+    padding: 10px;
+    border-radius: 12;
+    width: 100%;
+}
+.makeStyles-root-182 {
+    overflow-x: scroll; 
+}
+.makeStyles-root-182::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .makeStyles-root-182::-webkit-scrollbar-track {
+    box-shadow: transparent;
+    border-radius: 10px;
+  }
+  /* Handle */
+  .makeStyles-root-182::-webkit-scrollbar-thumb {
+    background: rgb(114, 114, 114); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .makeStyles-root-182::-webkit-scrollbar-thumb:hover {
+    background: #555555; 
+  }
+
+  .root-tab-div {
+    flex-grow: 1;
+    display: flex;
+    padding: 10px;
+    border-radius: 12;
+  }
+
+  #horizontal-tabs {display: none;}
+  #vertical-tabs {display: inline;}
+
 @media (max-width:850px){
-    .makeStyles-title-183{
-        width: 100% !important;
-        padding: 50px 50px 50px !important;
-        margin: 0 !important;
+    #vertical-tabs {display: none;}
+    #horizontal-tabs {display: block !important; width: 100% !important;}
+
+
+    .MuiButtonBase-root.Mui-selected { border: 0px !important; border-bottom: 3px solid #D5573B !important; font-weight: bold !important;}
+    .MuiButtonBase-root.Mui-selected:hover {  color:#D5573B !important;  border-bottom: 3px solid #D5573B ; font-weight: bold !important;}
+
+    .root-tab-div {
+        display: block !important;
+        padding: 10px !important;
+        border-radius: 12 !important;
+        margin: 0 auto !important;
     }
+    .root-tab-div button:focus {
+        border-right: none !important;
+    }
+
     .MuiGrid-grid-xs-6 {
         flex-direction: row;
         max-width: 100% !important;
@@ -39,13 +92,13 @@
     .MuiGrid-spacing-xs-4 > .MuiGrid-item img {
         margin: 40px 0  10px !important;
     }
-    .PDF-root-252 nav {
+    .PDF-root-248 nav {
         margin: 0 auto !important; 
     }
     .PDF-document-253 {
         margin: 0 auto !important; 
     }
-    .PDF-pagenum-255{
+    .PDF-pagenum-255, .PDF-document-249{
         margin: 0 auto !important; 
         text-align: center !important;
         float: center !important; 
