@@ -22,8 +22,8 @@ function App() {
         <About />
         <Experience />
         <Projects />
-        {/*<Coursework />
-        <Contact />  */}
+        <Coursework />
+        <Contact /> 
     </React.Fragment>
   );
 }
