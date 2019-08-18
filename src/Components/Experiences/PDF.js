@@ -22,7 +22,7 @@ const styles = {
     border: '1px solid',
     borderColor: '#d9d9d9',
     borderRadius: 10,
-    width: 400,
+    width: 300,
     // height: 'auto',
     overflow: 'hidden',
   },
@@ -78,7 +78,7 @@ class PDF extends Component {
 
     return (
       <div className={classes.root}>
-        <nav style={{width: 400}}> 
+        <nav style={{width: 300}}> 
           {/* Paper/Presentation select */}
           <div style={{float: 'left', display: 'inline', overflowX:'scroll'}}>
             <Select
@@ -122,7 +122,7 @@ class PDF extends Component {
             onLoadSuccess={this.onDocumentLoadSuccess}
             id="pdf-document-paper"
             >
-            <Page pageNumber={pageNumber} width={400}/>
+            <Page pageNumber={pageNumber} width={300}/>
             </Document>
 
           ) : (
@@ -130,7 +130,7 @@ class PDF extends Component {
             file={researchPres}
             onLoadSuccess={this.onDocumentLoadSuccess}
             >
-            <Page pageNumber={pageNumber} width={400}/>
+            <Page pageNumber={pageNumber} width={300}/>
             </Document>
           )}
         </div>

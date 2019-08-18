@@ -62,9 +62,12 @@ export default function SideBar() {
                 <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> About Me </h2>
                 <hr className={classes.divider}/>
                 <div style={{color: 'white'}}>
-                {lorem.generateParagraphs(1)}
+                  I am a senior at the University of Michigan majoring in Aerospace Engineering, with a minor in Computer Science. 
+                  Through my coursework, projects, and work experience I have developed engineering problem solving skills, especially 
+                  in the interface between software and hardware. I enjoy being passionately engaged in challenging problems, and working
+                  in driven high-paced teams. 
                 <br />
-                {lorem.generateParagraphs(1)}
+                Below are some of the software languages that I have experience in. 
                 </div>
 
                 <ol>
