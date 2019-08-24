@@ -1,4 +1,10 @@
 @media (max-width:850px){
+    #coursework {
+        padding: 0% !important; 
+        padding-bottom: 20% !important;
+        padding-top: 20% !important; 
+    }
+    #coursework-container {padding-left: 10px !important; padding-right: 10px !important;}
     .makeStyles-title-362 {
         width: 100% !important;
         padding: 50px 50px 50px !important;

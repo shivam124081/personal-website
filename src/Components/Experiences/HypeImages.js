@@ -100,15 +100,15 @@ class PDF extends Component {
           </IconButton>
 
         </nav>
-        <div className={classes.document}>
+        <div className='document'>
             {/*  */}
             {pageNumber === 3 ? (
-              <video className={classes.images} controls>
+              <video className='images-rb' controls>
                 <source src={videos[pageNumber-3]} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
-              <img src={images[pageNumber]} className={classes.images} /> 
+              <img src={images[pageNumber]} className='images-rb' /> 
             )}
         </div>
         <p className={classes.pagenum}> <b>Description: </b>{descriptions[pageNumber]} </p>

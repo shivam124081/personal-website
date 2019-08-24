@@ -1,0 +1,26 @@
+.profile-img {
+    max-width: 90%;
+    width: 450px;
+    border-radius: 12px;
+    margin-top: 40px; 
+    margin-left: 60px;
+}
+
+@media (max-width:850px){
+    /* Profile image grid css */
+    #profile-img {
+        width: 80% !important; 
+    }
+    #about {
+        padding: 0% !important; 
+        padding-bottom: 20% !important;
+        padding-top: 20% !important; 
+    }
+    .techdetails {
+        padding-left: 20px !important;
+    }
+    #about-root-grid {
+        padding-left: 10px !important; 
+        padding-right: 10px !important; 
+    }
+}

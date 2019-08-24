@@ -20,14 +20,6 @@ const useStyles = makeStyles(theme => ({
   rootGrid : {
     flexGrow: 1
   },
-  profile: {
-      maxWidth: '90%',
-      width: 450,
-      borderRadius: 12,
-      marginTop: 40,
-      marginLeft: 60,
-      zIndex: 2
-  },
   border : {
       border: '2px solid',
       borderColor: '#D5573B',
@@ -57,7 +49,7 @@ export default function SideBar() {
 
   return (
     <div className="section-root" style={{backgroundColor: '#85858C'}} id="about">
-        <Grid container clasName={classes.rootGrid}>
+        <Grid container clasName={classes.rootGrid} id="about-root-grid">
             <Grid item xs={6}>
                 <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> About Me </h2>
                 <hr className={classes.divider}/>
@@ -71,7 +63,7 @@ export default function SideBar() {
                 </div>
 
                 <ol>
-                    <Grid container spacing={4} justify="center">
+                    <Grid container justify="center">
                         <Grid item xs={6}>
                           <ul className="techdetails">
                             <li> <span>C++ </span></li>
@@ -91,7 +83,7 @@ export default function SideBar() {
             </Grid>
 
             <Grid item xs={6}>
-                <img src={profilePic} className={classes.profile}/>
+                <img src={profilePic} className='profile-img' id="profile-img"/>
             </Grid>
         </Grid>
     </div>

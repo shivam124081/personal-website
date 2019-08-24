@@ -36,6 +36,11 @@
 }
 
 @media (max-width:850px){
-
-  .card {max-width: 500px !important; margin: 0 auto !important;}
+  #projects {
+    padding: 0% !important; 
+    padding-bottom: 20% !important;
+    padding-top: 20% !important; 
+  }
+  #projects-container {padding-left: 10px !important; padding-right: 10px !important;}
+  .card {width: 90% !important; margin: 0 auto !important;}
 }

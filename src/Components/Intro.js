@@ -81,7 +81,7 @@ export default function Intro() {
 
   return (
     <div className="section-root" id='home'>
-      <Grid container justify="center">
+      <Grid container justify="center" id='home-root-grid'>
         <Grid item lg={6}>
           {/* Intro */}
           <h2 style={{color: '#D5573B'}}>

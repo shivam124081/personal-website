@@ -19,7 +19,7 @@ const lorem = new LoremIpsum({
 const useStyles = makeStyles(theme => ({
   divider: {
     color: "#011627",
-    width: "40%",
+    width: "80px",
     height: '1px',
     backgroundColor: '#011627',
     border: 'none',
@@ -46,6 +46,7 @@ export default function Contact() {
 
   return (
     <div className="section-root" id='coursework'>
+      <div id="coursework-container">
       <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Relevant Coursework </h2>
       <hr className={classes.divider}/>
     
@@ -79,7 +80,7 @@ export default function Contact() {
       </Grid>
 
     </ol>
-        
+    </div>
     </div>
   );
 }

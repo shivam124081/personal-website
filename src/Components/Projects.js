@@ -34,9 +34,10 @@ class Projects extends Component {
 
     return (
         <div className="section-root" style={{backgroundColor: '#85858C'}} id='projects'>
+        <div id='projects-container'>
         <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Other Projects </h2>
         <hr className={classes.divider}/>
-        <Grid container justify="space-around" alignContent="flex-start" spacing={4}>
+        <Grid container justify="space-around" alignContent="flex-start">
             <Grid item md={4} className={classes.grid}>
               <AMSID />
             </Grid>
@@ -53,6 +54,7 @@ class Projects extends Component {
               <MITEE />
             </Grid>
         </Grid>
+        </div>
         </div>
 
     );

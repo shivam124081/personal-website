@@ -16,9 +16,16 @@
         width: 100% !important;
         margin: 0 auto !important;
     }
-    #logo-grid img {width: 50% !important; margin: 0 !important;}
+    #logo-grid img {width: 80% !important; margin: 0 !important; margin-top: 10px !important;}
     #home {
         text-align: center !important;
+        padding: 0% !important; 
+        padding-top: 20% !important;
+        padding-bottom: 20% !important; 
+    }
+    #home-root-grid {
+        padding-left: 10px !important; 
+        padding-right: 10px !important; 
     }
     .intro-para {
         width: 100%;

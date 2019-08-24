@@ -105,6 +105,7 @@ export default function Experience() {
 
   return (
     <div className="section-root" id="experience">
+    <div id="experience-container">
     <h2 style={{color: '#033966'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Key Experiences </h2>
     <hr className={classes.divider}/>
 
@@ -150,6 +151,7 @@ export default function Experience() {
       <TabPanel value={value} index={2}>
         <Hyperloop />
       </TabPanel>
+    </div>
     </div>
     </div>
   );

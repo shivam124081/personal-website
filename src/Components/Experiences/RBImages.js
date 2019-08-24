@@ -8,7 +8,17 @@ import PrevIcon from '@material-ui/icons/KeyboardArrowLeft';
 import NextIcon from '@material-ui/icons/KeyboardArrowRight';
 import Select from '@material-ui/core/Select';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
+
+import workflowGif from '../../static/rb-workflow.gif'
 import RBgif from '../../static/RBAIGIF.gif';
+import rbVid from '../../static/rb-overview.mp4';
+
+const images = [workflowGif, rbVid, RBgif]
+const videos = [rbVid]
+const descriptions = ['Completely customizable workflow, high-performance labeling, and a collaborative environment',
+                      'Create and manage high-quality vision training data.',
+                      'Create and manage high-quality vision training data.',
+                    ]
 
 const styles = {
     root: {
@@ -16,10 +26,6 @@ const styles = {
         marginTop: -10,
         textAlign: 'center',
         marginLeft: 55
-      },
-      images : {
-        width: '400px',
-        marginBottom: '-10px'
       },
       document: {
         border: '1px solid',
@@ -36,7 +42,7 @@ const styles = {
         }
       },
       pagenum: {
-        margin: '0 auto',
+        float: 'left',
         color: '#033966'
       },
       select : {
@@ -55,26 +61,31 @@ const styles = {
 };
 
 class PDF extends Component {
-  state = { numPages: null, pageNumber: 1, value: 0, content: researchPaper };
+  state = { numPages: null, pageNumber: 0, value: 0, content: researchPaper };
+
+  goToPrevPage = () =>
+    this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
+  goToNextPage = () =>
+    this.setState(state => ({ pageNumber: state.pageNumber + 1 })); 
 
   render() {
-    const { pageNumber, numPages, value } = this.state;
+    const { pageNumber } = this.state;
     const {classes} = this.props
 
     return (
       <div className={classes.root}>
-        <nav style={{width: 400, textAlign: 'center'}}>
+        <nav className='nav'>
           {/* Paper/Presentation select */}
 
           <IconButton 
-            disabled={pageNumber === 1 ? true : false}
+            disabled={pageNumber === 0 ? true : false}
             aria-label="prev"
             onClick={this.goToPrevPage} 
             className={classes.navbutton} >
             <PrevIcon/>
           </IconButton>
           <IconButton
-            disabled={pageNumber === numPages ? true : false}
+            disabled={pageNumber === images.length ? true : false}
             aria-label="prev"
             onClick={this.goToNextPage}
             className={classes.navbutton}>
@@ -82,9 +93,18 @@ class PDF extends Component {
           </IconButton>
 
         </nav>
-        <div className={classes.document}>
-            <img src={RBgif} className={classes.images} />
-        </div> 
+        <div className='document'>
+            {/*  */}
+            {pageNumber === 1 ? (
+              <video className='images-rb' controls>
+                <source src={videos[0]} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <img src={images[pageNumber]} className='images-rb' /> 
+            )}
+        </div>
+        <p className='pagenum'> <b>Description: </b>{descriptions[pageNumber]} </p>
         </div>
     );
   }

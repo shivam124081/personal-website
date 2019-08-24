@@ -1,5 +1,9 @@
 
 @media (max-width:850px){
+    #contact {
+        padding: 0% !important; 
+        padding-top: 10% !important; 
+      }
     .makeStyles-root-358 {
         width: 100% !important;
         padding: 50px 50px 50px !important;

@@ -44,11 +44,35 @@
   #horizontal-tabs {display: none;}
   #vertical-tabs {display: inline;}
 
+  .images-rb {
+      width: 432px; 
+      margin-bottom: -10px; 
+  }
+  .document {
+    border: 1px solid; 
+    border-color: #d9d9d9;
+    border-radius: 10px; 
+    width: 430px; 
+    overflow: hidden; 
+  }
+  .nav {width: 430px; text-align: center}
+  .pagenum {
+      float: left; 
+      text-align: left; 
+      color: #033966;
+      width: 430px; 
+  }
+
 @media (max-width:850px){
+    #experience {
+        padding: 0% !important; 
+        padding-bottom: 20% !important;
+        padding-top: 20% !important; 
+    }
+    #experience-container {padding-left: 10px !important; padding-right: 10px !important;}
+    #experience * {font-size: 13px ;}
     #vertical-tabs {display: none;}
     #horizontal-tabs {display: block !important; width: 100% !important;}
-
-
     .MuiButtonBase-root.Mui-selected { border: 0px !important; border-bottom: 3px solid #D5573B !important; font-weight: bold !important;}
     .MuiButtonBase-root.Mui-selected:hover {  color:#D5573B !important;  border-bottom: 3px solid #D5573B ; font-weight: bold !important;}
 
@@ -106,4 +130,17 @@
     .makeStyles-divider-188 {
         display: none;
     }
+    .images-rb {
+        width: 330px; 
+        margin-bottom: -10px; 
+    }
+    .document {
+        border: 1px solid; 
+        border-color: #d9d9d9;
+        border-radius: 10px; 
+        width: 300px; 
+        overflow: hidden; 
+    }
+    .nav {width: 300px; text-align: center}
+
 }
