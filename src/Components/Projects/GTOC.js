@@ -14,7 +14,9 @@ import { red } from '@material-ui/core/colors';
 import Button from '@material-ui/core/Button';
 import FileIcon from '@material-ui/icons/FolderOpen';
 import { LoremIpsum } from "lorem-ipsum";
+import '../Projects.css'
 
+import GTOCMore from './GTOC/GTOC_More'
 import galaxy from '../../static/galaxy.jpg'
 
 const lorem = new LoremIpsum({
@@ -52,29 +54,20 @@ const useStyles = makeStyles(theme => ({
   avatar: {
     backgroundColor: red[500],
   },
-  more: {
-    display: 'inline',
-    color: '#D5573B',
-    borderColor: '#D5573B',
-    fontWeight: 'bold',
-    marginLeft: 'auto',
-    '&:hover' : {
-      color: '#033966',
-      borderColor: '#D5573B',
-      backgroundColor: '#D5573B'
-    }
-},
 }));
 
 export default function GTOC() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  function handleExpandClick() {
-    setExpanded(!expanded);
-  }
+  const [moreInfo, setMoreInfo] = React.useState(false);
 
   return (
+    <React.Fragment>
+    {/* Render Dialogs */}
+    {! moreInfo ? (
+      <React.Fragment />
+    ) : (
+      <GTOCMore moreInfo={moreInfo} setMoreInfo={setMoreInfo} title={"Global Trajectory Optimization Competition X"}/>
+    )}
     <Card className="card">
       <CardHeader
         avatar={
@@ -93,16 +86,19 @@ export default function GTOC() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          <div className="project-scroll">
-           {lorem.generateSentences(2)}
+          <div className={clsx("project-scroll", "view-scroll")}>
+            Member of the team from University of Michigan that participated in the 10th Global Trajectory Competition - started
+            by the European Space Agency, and problem statement released by JPL NASA. Teams were tasked with finding optimal
+            solutions to settling the galaxy under various constraints. 
           </div>
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="outlined" className={classes.more}>
+        <Button variant="outlined" className='view-morebtn' onClick={()=>{setMoreInfo(true)}}>
           View More
         </Button>
       </CardActions>
     </Card>
+    </React.Fragment>
   );
 }

@@ -37,7 +37,7 @@ class Projects extends Component {
         <div id='projects-container'>
         <h2 style={{color: '#011627'}}> <p style={{color: '#D5573B', display: 'inline'}}></p> Other Projects </h2>
         <hr className={classes.divider}/>
-        <Grid container justify="space-around" alignContent="flex-start">
+        <Grid container justify="space-around" alignContent="flex-start" spacing={4}>
             <Grid item md={4} className={classes.grid}>
               <AMSID />
             </Grid>

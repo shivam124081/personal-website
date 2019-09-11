@@ -85,7 +85,7 @@ class PDF extends Component {
             <PrevIcon/>
           </IconButton>
           <IconButton
-            disabled={pageNumber === images.length ? true : false}
+            disabled={pageNumber === images.length - 1? true : false}
             aria-label="prev"
             onClick={this.goToNextPage}
             className={classes.navbutton}>
@@ -96,12 +96,12 @@ class PDF extends Component {
         <div className='document'>
             {/*  */}
             {pageNumber === 1 ? (
-              <video className='images-rb' controls>
+              <video className='images-rb' id='images-rb' controls>
                 <source src={videos[0]} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
-              <img src={images[pageNumber]} className='images-rb' /> 
+              <img src={images[pageNumber]} className='images-rb' id='images-rb'/> 
             )}
         </div>
         <p className='pagenum'> <b>Description: </b>{descriptions[pageNumber]} </p>

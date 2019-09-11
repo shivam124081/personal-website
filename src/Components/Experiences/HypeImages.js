@@ -81,7 +81,7 @@ class PDF extends Component {
 
     return (
       <div className={classes.root}>
-        <nav style={{width: 400, textAlign: 'center'}}>
+        <nav className='nav'>
           {/* Paper/Presentation select */}
 
           <IconButton 
@@ -103,15 +103,15 @@ class PDF extends Component {
         <div className='document'>
             {/*  */}
             {pageNumber === 3 ? (
-              <video className='images-rb' controls>
+              <video className='images-rb' id='images-rb' controls>
                 <source src={videos[pageNumber-3]} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
-              <img src={images[pageNumber]} className='images-rb' /> 
+              <img src={images[pageNumber]} className='images-rb' id='images-rb'/> 
             )}
         </div>
-        <p className={classes.pagenum}> <b>Description: </b>{descriptions[pageNumber]} </p>
+        <p className='pagenum'> <b>Description: </b>{descriptions[pageNumber]} </p>
         </div>
     );
   }

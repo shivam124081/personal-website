@@ -11,7 +11,7 @@ header .MuiToolbar-gutters button:hover { background: #D5573B !important; color 
 .MuiTypography-body1 { width: 100%;}
 .MuiButton-root {padding: 5px 16px !important; }
 .MuiButtonBase-root { background: transparent !important; padding: 5px 16px !important; border-radius: 0px !important; font-weight: 400;}
-
+.nostyle-btn {background: transparent !important}
 /* Header CSS*/
 .header {
   margin-left: auto; 
@@ -67,6 +67,10 @@ ol { padding-left: 0px !important;}
 #experience button:hover { background: #D5573B !important; color: #fff !important;}
 #contact button:hover { background: #D5573B !important; color: #fff !important; margin-top: 30px !important;}
 .PDF-pagenum-254 { font-size: 14px; padding-top: 5px;}
+
+.no-link {
+  text-decoration: none !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

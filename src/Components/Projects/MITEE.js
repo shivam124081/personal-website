@@ -14,6 +14,8 @@ import { red } from '@material-ui/core/colors';
 import Button from '@material-ui/core/Button';
 import FileIcon from '@material-ui/icons/FolderOpen';
 import { LoremIpsum } from "lorem-ipsum";
+import MITEEMore from './MITEE/MITEE_More';
+import '../Projects.css'
 
 import galaxy from '../../static/mitee.jpg'
 
@@ -68,13 +70,16 @@ const useStyles = makeStyles(theme => ({
 
 export default function MITEE() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  function handleExpandClick() {
-    setExpanded(!expanded);
-  }
+  const [moreInfo, setMoreInfo] = React.useState(false);
 
   return (
+    <React.Fragment>
+    {/* Render Dialogs */}
+    {! moreInfo ? (
+      <React.Fragment />
+    ) : (
+      <MITEEMore moreInfo={moreInfo} setMoreInfo={setMoreInfo} title={"Miniature Tether Electrodynamics Experiment"}/>
+    )}
     <Card className="card">
       <CardHeader
         avatar={
@@ -93,16 +98,19 @@ export default function MITEE() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          <div className="project-scroll">
-           {lorem.generateSentences(2)}
+          <div className={clsx("project-scroll", "view-scroll")}>
+            The Miniature Tether Electrodynamic Experiement is a Research Project at the University of Michigan
+            aimed at testing small electrodynamic tethers as a form of propulsion for small satellites. I worked on
+            the Orbits Attitude Determination and Control sub-team. 
           </div>
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="outlined" className={classes.more}>
+        <Button variant="outlined" className='view-morebtn' onClick={()=>{setMoreInfo(true)}} disabled={true}>
           View More
         </Button>
       </CardActions>
     </Card>
+    </React.Fragment>
   );
 }

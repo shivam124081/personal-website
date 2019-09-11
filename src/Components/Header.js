@@ -7,6 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import clsx from 'clsx';
+import resume from '../static/Resume_2019.pdf'
 
 
 const useStyles = makeStyles(theme => ({
@@ -63,8 +64,17 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
 export default function Header() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget);
+  }
+
+  function handleClose() {
+    setAnchorEl(null);
+  }
 
   return (
     <div className={classes.root}>
@@ -84,11 +94,7 @@ export default function Header() {
                     </Link>
                 </h4>
             </div>
-            
-            <div className="mobile_menu">
-              <i class={clsx(`fa fa-bars ${classes.icon}`)} style={{ fontSize: "20px",
-    paddingright: "15px"}}></i>
-            </div>
+
             <div className="header">
                 <div><p> <Link activeClass="active"
                                     to="about"
@@ -120,9 +126,14 @@ export default function Header() {
                                     smooth={true}
                                     offset={-70}
                                     duration= {500}> Contact </Link> </p> </div>
-                <Button variant="outlined" className={classes.resume}>
+
+                
+                <a href={resume} download className="no-link">
+                  <Button variant="outlined" className={classes.resume}>
                     Resume
-                </Button>
+                  </Button>
+                </a>
+                
             </div>
 
         </Toolbar>

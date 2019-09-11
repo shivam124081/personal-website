@@ -35,6 +35,26 @@
   background-color: #DCDCDD !important;
 }
 
+.view-morebtn {
+  display: inline !important; 
+  color: #D5573B !important;
+  border-color: #D5573B !important;
+  font-weight: bold !important; 
+  margin-left: auto !important; 
+} 
+.view-morebtn:hover {
+  color: #DCDCDD !important;
+  border-color: #D5573B !important;
+  background-color: #D5573B !important;
+}
+
+.view-morebtn:disabled {
+  color: rgb(148, 148, 148) !important;
+  border-color: rgb(148, 148, 148) !important;
+  background-color: #DCDCDD !important;
+}
+
+
 @media (max-width:850px){
   #projects {
     padding: 0% !important; 

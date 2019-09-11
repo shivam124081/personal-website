@@ -56,7 +56,7 @@ class Redbrick extends Component {
         <Grid container spacing={1}>
           {/* Text */}
           <Grid item lg={5}>
-            <img src={hypeLogo} className={classes.logo}/>
+            <img src={hypeLogo} id='logo'/>
             <br />
             <br />
             <p className={classes.section} style={{display: 'inline'}}> Title: </p> <p style={{display: 'inline'}}> Co-founder, Engineering Lead </p>

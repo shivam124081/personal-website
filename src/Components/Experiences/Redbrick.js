@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Grid from '@material-ui/core/Grid';
-import ResearchPaper from './PDF'
 import { withStyles } from '@material-ui/core/styles';
 import { LoremIpsum } from "lorem-ipsum";
 
@@ -33,7 +32,7 @@ const styles = {
         color: '#033966'
       },
       logo : {
-        width: '200px',
+        width: '120px',
       },
       list : {
         '& li': {
@@ -71,7 +70,7 @@ class Redbrick extends Component {
             <ul className={classes.list}>
               <li> <span> Designed and built application front-end using - React JS, HTML & CSS.</span> </li>
               <li> <span> Built backend (python) pre-labeling features (automated labeling, and pre-generated labels) </span> </li>
-              <li> <span> Onboarded 2 research teams (MCity and UofM Aerospace Engineering) within 3 months.</span> </li>
+              <li> <span> Onboarded 2 research teams (<a href="https://mcity.umich.edu/">MCity</a> and UofM Aerospace Engineering) within 3 months.</span> </li>
             </ul>
           </Grid>
 

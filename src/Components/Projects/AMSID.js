@@ -102,7 +102,7 @@ export default function AMSID() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="outlined" className={classes.more} onClick={()=>{setMoreInfo(true)}}>
+          <Button variant="outlined" className='view-morebtn' onClick={()=>{setMoreInfo(true)}}>
             View More
           </Button>
         </CardActions>

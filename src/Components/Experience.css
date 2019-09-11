@@ -60,10 +60,21 @@
       float: left; 
       text-align: left; 
       color: #033966;
-      width: 430px; 
+      width: 100%; 
+  }
+  #logo {
+      width: 200px; 
   }
 
 @media (max-width:850px){
+    #logo {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .PDF-root-322, .PDF-root-334 {
+        margin: 0 !important; 
+    }
     #experience {
         padding: 0% !important; 
         padding-bottom: 20% !important;
@@ -134,12 +145,18 @@
         width: 330px; 
         margin-bottom: -10px; 
     }
+    #images-rb {
+        width: 330px; 
+        margin: 0 !important; 
+        margin-bottom: -10px !important; 
+    }
     .document {
         border: 1px solid; 
         border-color: #d9d9d9;
         border-radius: 10px; 
         width: 300px; 
-        overflow: hidden; 
+        overflow: hidden;
+        margin: 0 !important; 
     }
     .nav {width: 300px; text-align: center}
 

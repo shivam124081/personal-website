@@ -6,13 +6,12 @@ import PrevIcon from '@material-ui/icons/KeyboardArrowLeft';
 import NextIcon from '@material-ui/icons/KeyboardArrowRight';
 
 import enc1 from '../../../static/Enceladus/orbit.gif';
-import amsid1 from '../../../static/AMSID/AMSID.mp4'
 import enc2 from '../../../static/Enceladus/flowchart.jpg'
 import enc3 from '../../../static/Enceladus/dijkstra.gif'
 import enc4 from '../../../static/Enceladus/branch.gif'
 
 const images = [enc1, enc2, enc3, enc4];
-const videos = [amsid1]
+const videos = []
 const descriptions = ["Optimized Solar system orbital flyby sequence using MGA-1DSM problem formulation, and genetic optimization (PyKEP and PyGMO)",
                       "Flowchart overview of orbital analysis approach.",
                       "Dijkstra's algorithm on graphical representation of a tisserand plot to find possible flyby sequences",

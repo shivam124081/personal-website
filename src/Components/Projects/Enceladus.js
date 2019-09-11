@@ -75,7 +75,7 @@ export default function Enceladus() {
     {! moreInfo ? (
       <React.Fragment />
     ) : (
-      <EnceladusMore moreInfo={moreInfo} setMoreInfo={setMoreInfo} title={"Multi-surface Inspection Drone - AE405"}/>
+      <EnceladusMore moreInfo={moreInfo} setMoreInfo={setMoreInfo} title={"Enceladus Mission Design - AE483"}/>
     )}
     <Card className="card">
       <CardHeader
@@ -103,7 +103,7 @@ export default function Enceladus() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="outlined" className={classes.more} onClick={()=>{setMoreInfo(true)}}>
+        <Button variant="outlined" className='view-morebtn' onClick={()=>{setMoreInfo(true)}}>
           View More
         </Button>
       </CardActions>
