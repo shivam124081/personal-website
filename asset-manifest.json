@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.aaec3522.chunk.css",
-    "main.js": "./static/js/main.6d487cbb.chunk.js",
-    "main.js.map": "./static/js/main.6d487cbb.chunk.js.map",
+    "main.css": "./static/css/main.6db2f9ed.chunk.css",
+    "main.js": "./static/js/main.eaeedd73.chunk.js",
+    "main.js.map": "./static/js/main.eaeedd73.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
     "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
-    "static/js/2.daa47b80.chunk.js": "./static/js/2.daa47b80.chunk.js",
-    "static/js/2.daa47b80.chunk.js.map": "./static/js/2.daa47b80.chunk.js.map",
+    "static/js/2.fdfa98b1.chunk.js": "./static/js/2.fdfa98b1.chunk.js",
+    "static/js/2.fdfa98b1.chunk.js.map": "./static/js/2.fdfa98b1.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.cdb1f4ed054075fcf5a7483a6e43490a.js": "./precache-manifest.cdb1f4ed054075fcf5a7483a6e43490a.js",
+    "precache-manifest.ac84bf96151c683048c776628140495d.js": "./precache-manifest.ac84bf96151c683048c776628140495d.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.aaec3522.chunk.css.map": "./static/css/main.aaec3522.chunk.css.map",
+    "static/css/main.6db2f9ed.chunk.css.map": "./static/css/main.6db2f9ed.chunk.css.map",
     "static/media/AMSID.mp4": "./static/media/AMSID.1631d78a.mp4",
     "static/media/AMSID.jpg": "./static/media/AMSID.6e018b5a.jpg",
     "static/media/RBAIGIF.gif": "./static/media/RBAIGIF.008beb7c.gif",
+    "static/media/Resume_2019.pdf": "./static/media/Resume_2019.57f4ef23.pdf",
     "static/media/SSS19_final.pdf": "./static/media/SSS19_final.bb744984.pdf",
     "static/media/Safeable_VNN19.pdf": "./static/media/Safeable_VNN19.acecd2c0.pdf",
     "static/media/SubtrackPod1.jpg": "./static/media/SubtrackPod1.7c885970.jpg",
@@ -23,6 +24,7 @@
     "static/media/enceladus.jpg": "./static/media/enceladus.465f14c8.jpg",
     "static/media/flowchart.jpg": "./static/media/flowchart.e046b965.jpg",
     "static/media/galaxy.jpg": "./static/media/galaxy.101eed2b.jpg",
+    "static/media/galaxy.mp4": "./static/media/galaxy.ee027642.mp4",
     "static/media/logos.svg": "./static/media/logos.7a9cecd4.svg",
     "static/media/mhyperloop.png": "./static/media/mhyperloop.79eed3e5.png",
     "static/media/michigan.png": "./static/media/michigan.2e5887a2.png",
@@ -35,6 +37,7 @@
     "static/media/rb-overview.mp4": "./static/media/rb-overview.9455d482.mp4",
     "static/media/rb-workflow.gif": "./static/media/rb-workflow.36487bd9.gif",
     "static/media/redbrick.png": "./static/media/redbrick.227df644.png",
+    "static/media/sequences.gif": "./static/media/sequences.ddee154b.gif",
     "static/media/static-amsid.jpg": "./static/media/static-amsid.3439ce55.jpg"
   }
 }
