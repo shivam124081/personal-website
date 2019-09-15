@@ -52,9 +52,9 @@ class Redbrick extends Component {
 
     return (
         <div className={classes.rootDiv}>
-        <Grid container spacing={4}>
+        <Grid container>
           {/* Text */}
-          <Grid item xs={5}>
+          <Grid item xs={6}>
             <img src={redbrickLogo} className={classes.logo}/>
             <br />
             <br />
@@ -75,7 +75,7 @@ class Redbrick extends Component {
           </Grid>
 
           {/* Paper */}
-          <Grid item xs={7}>
+          <Grid item xs={6}>
             <RBimgaes />
           </Grid>
         </Grid>

@@ -55,7 +55,14 @@
     width: 430px; 
     overflow: hidden; 
   }
-  .nav {width: 430px; text-align: center}
+  .nav {
+      width: 430px; 
+      text-align: center;
+  }
+  .nav-pdf {
+    width: 300px; 
+    margin: 0 auto !important; 
+  }
   .pagenum {
       float: left; 
       text-align: left; 
@@ -64,6 +71,9 @@
   }
   #logo {
       width: 200px; 
+  }
+  .PDF-document-248 {
+      margin: 0 auto !important; 
   }
 
 @media (max-width:850px){

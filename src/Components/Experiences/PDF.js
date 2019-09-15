@@ -16,7 +16,6 @@ const styles = {
   root: {
     marginTop: -10,
     textAlign: 'center',
-    marginLeft: 25
   },
   document: {
     border: '1px solid',
@@ -78,7 +77,7 @@ class PDF extends Component {
 
     return (
       <div className={classes.root}>
-        <nav style={{width: 300}}> 
+        <nav className="nav-pdf"> 
           {/* Paper/Presentation select */}
           <div style={{float: 'left', display: 'inline', overflowX:'scroll'}}>
             <Select
